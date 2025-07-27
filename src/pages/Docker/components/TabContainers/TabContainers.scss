@@ -1,0 +1,86 @@
+/* TabContainers Component Styles */
+.containers-section {
+    
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h2 {
+            margin: 0;
+            color: #2c3e50;
+        }
+    }
+
+    .controls {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    }
+
+    /* Container Cards Grid */
+    .containers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 20px;
+    }
+
+    .loading {
+        text-align: center;
+        padding: 40px;
+        color: #666;
+        font-size: 1.1rem;
+    }
+}
+
+/* Button styles for this component */
+.btn-primary {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #007bff;
+    color: white;
+    
+    svg {
+        font-size: 1em;
+        flex-shrink: 0;
+    }
+
+    &:hover {
+        background: #0056b3;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containers-section {
+        .containers-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .controls {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+}

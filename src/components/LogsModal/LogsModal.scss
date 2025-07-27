@@ -1,0 +1,85 @@
+.LogsModal {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        background: #1e1e1e;
+        border-radius: 8px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+        width: 90vw;
+        max-width: 700px;
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    &__header {
+        padding: 1rem 1.5rem;
+        background: #23272f;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #2c2f36;
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        color: #aaa;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color 0.2s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__body {
+        padding: 1rem 1.5rem;
+        background: #181a1b;
+        color: #e0e0e0;
+        font-family: 'Fira Mono', 'Consolas', monospace;
+        font-size: 0.95rem;
+        overflow-y: auto;
+        flex: 1 1 auto;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
+    &__footer {
+        padding: 0.75rem 1.5rem;
+        background: #23272f;
+        border-top: 1px solid #2c2f36;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    &__button {
+        background: #2d8cff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #186dd6;
+        }
+    }
+}

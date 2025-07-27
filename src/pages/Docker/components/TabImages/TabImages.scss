@@ -1,0 +1,38 @@
+/* TabImages Component Styles */
+.images-section {
+    
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h2 {
+            margin: 0;
+            color: #2c3e50;
+        }
+    }
+
+    /* Images Grid */
+    .images-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px;
+    }
+
+    .loading {
+        text-align: center;
+        padding: 40px;
+        color: #666;
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .images-section {
+        .images-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
