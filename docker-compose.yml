@@ -1,0 +1,15 @@
+# Docker Compose configuration for Harbour - Docker Management UI
+version: '3.8'
+
+services:
+  # Frontend React Application
+  harbour:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: harbour
+    ports:
+      - "3100:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
