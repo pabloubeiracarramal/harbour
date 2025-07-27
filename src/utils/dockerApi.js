@@ -1,5 +1,5 @@
 // Docker API utility functions
-const API_BASE = 'http://yardmaster.pabloubeiracarramal.com';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://yardmaster.pabloubeiracarramal.com';
 
 export const dockerApi = {
     // Docker info
