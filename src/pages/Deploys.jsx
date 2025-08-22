@@ -3,7 +3,7 @@ import React from 'react';
 function Deploys() {
     return (
         <div>
-            {/* Deploys page content */}
+            DEPLOYS
         </div>
     );
 }

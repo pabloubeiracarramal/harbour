@@ -33,7 +33,7 @@ function TabContainers() {
                         Show all containers
                     </label>
                     <button onClick={() => setShowRunForm(true)} className="btn-primary">
-                        <FaPlus /> Run New Container
+                        <FaPlus size={20} /> Run New Container
                     </button>
                 </div>
             </div>

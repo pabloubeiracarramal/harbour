@@ -2,7 +2,7 @@ import React from 'react';
 import './TabImages.scss';
 import useImages from '../../hooks/useImages';
 import PullImageForm from '../PullImageForm/PullImageForm';
-import ImageCard from '../ImageCard';
+import ImageCard from '../ImageCard/ImageCard';
 
 function TabImages() {
 

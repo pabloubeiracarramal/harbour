@@ -1,6 +1,6 @@
 /* TabContainers Component Styles */
 .containers-section {
-    
+
     .section-header {
         display: flex;
         justify-content: space-between;
@@ -27,6 +27,31 @@
             font-size: 0.9rem;
             color: #666;
         }
+
+        .btn-primary {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #007bff;
+            color: white;
+
+            svg {
+                font-size: 1em;
+                flex-shrink: 0;
+            }
+
+            &:hover {
+                background: #0056b3;
+            }
+        }
     }
 
     /* Container Cards Grid */
@@ -44,31 +69,7 @@
     }
 }
 
-/* Button styles for this component */
-.btn-primary {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: #007bff;
-    color: white;
-    
-    svg {
-        font-size: 1em;
-        flex-shrink: 0;
-    }
 
-    &:hover {
-        background: #0056b3;
-    }
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

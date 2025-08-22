@@ -1,0 +1,60 @@
+.page {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+    .login {
+
+        color: var(--color-text-inverse);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 100;
+        }
+
+        .login-button {
+
+            cursor: pointer;
+
+            border-radius: 1rem;
+            width: 100%;
+            background-color: var(--color-surface);
+            padding: 1rem;
+
+            color: var(--color-secondary);
+
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+
+            box-shadow: var(--shadow-lg);
+
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                background-color: var(--color-surface-variant);
+                box-shadow: var(--shadow-xl);
+            }
+
+            p {
+                margin: 0;
+            }
+
+        }
+
+    }
+
+}

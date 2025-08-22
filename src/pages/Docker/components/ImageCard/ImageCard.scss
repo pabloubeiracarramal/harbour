@@ -1,14 +1,14 @@
 /* ImageCard Component Styles */
 .image-card {
-    background: white;
-    border: 1px solid #e0e0e0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-primary);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-sm);
     transition: box-shadow 0.3s ease;
 
     &:hover {
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        box-shadow: var(--shadow-md);
     }
 
     .image-header {
@@ -26,20 +26,21 @@
         svg {
             font-size: 1.5em;
             flex-shrink: 0;
+            color: var(--color-primary);
         }
         
         .image-details {
             .repository {
                 font-weight: bold;
                 font-size: 1.1rem;
-                color: #2c3e50;
+                color: var(--color-text-primary);
                 margin-bottom: 2px;
             }
             
             .tag {
                 font-size: 0.9rem;
-                color: #666;
-                background: #f0f0f0;
+                color: var(--color-text-secondary);
+                background: var(--color-surface-variant);
                 padding: 2px 8px;
                 border-radius: 12px;
                 display: inline-block;
@@ -56,19 +57,19 @@
             align-items: center;
             margin-bottom: 8px;
             font-size: 0.9rem;
-            color: #555;
+            color: var(--color-text-secondary);
 
             strong {
-                color: #333;
+                color: var(--color-text-primary);
                 margin-right: 10px;
             }
 
             .image-id {
                 font-family: monospace;
-                background: #f8f9fa;
+                background: var(--color-surface-variant);
                 padding: 2px 6px;
                 border-radius: 4px;
-                color: #666;
+                color: var(--color-text-tertiary);
             }
         }
     }
@@ -101,20 +102,20 @@
 }
 
 .btn-danger {
-    background: #dc3545;
-    color: white;
+    background: var(--color-danger);
+    color: var(--color-text-inverse);
 
     &:hover {
-        background: #c82333;
+        background: var(--color-danger-hover);
     }
 }
 
 .btn-warning {
-    background: #ffc107;
-    color: #212529;
+    background: var(--color-warning);
+    color: var(--color-text-inverse);
 
     &:hover {
-        background: #e0a800;
+        background: var(--color-warning-hover);
     }
 }
 

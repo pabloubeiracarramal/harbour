@@ -3,7 +3,7 @@ import React from 'react';
 function Server() {
     return (
         <div>
-            {/* Server page content */}
+            SERVERS
         </div>
     );
 }
